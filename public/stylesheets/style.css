@@ -35,6 +35,11 @@ span {
     color: #FA6D06;
 }
 
+
+/* span {
+    color: #B70E21;
+} */
+
 .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
@@ -86,11 +91,20 @@ span {
 }
 
 .contact-form form button {
-    background: #FA6D06;
+    background: #116CFA;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
 }
+
+
+/* .contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+} */
 
 .contact-form form button:hover,
 .contact-form form button:focus {
