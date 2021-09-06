@@ -28,11 +28,11 @@ ul {
 }
 
 .logo span {
-    color: #B70E21;
+    color: #FA6D06;
 }
 
 span {
-    color: #B70E21;
+    color: #FA6D06;
 }
 
 .contact-wrapper {
@@ -65,12 +65,13 @@ span {
     background: none;
     outline: 0;
     color: #fff;
-    border-bottom: 1px solid #d63031;
+    border-bottom: 1px solid #FA6D06;
 }
 
 .contact-form form label {
     display: block;
     padding-left: 15px;
+    text-indent: -15px;
 }
 
 .contact-form form label input {
@@ -85,7 +86,7 @@ span {
 }
 
 .contact-form form button {
-    background: #B70E21;
+    background: #FA6D06;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -93,7 +94,7 @@ span {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: #d63031;
+    background: #FA6D06;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
