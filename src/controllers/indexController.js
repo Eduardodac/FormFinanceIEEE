@@ -1,4 +1,5 @@
 const db = require('../database/models');
+const { v4: getID } = require("uuid");
 
 const indexController = {
     'main': (req, res, next) => {
@@ -6,6 +7,7 @@ const indexController = {
     },
     'user': (req, res, next) => {
         let usuario = {
+            id: getID(),
             name: req.body.nombre,
             age: req.body.edad,
             email: req.body.email,

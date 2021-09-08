@@ -4,10 +4,9 @@ module.exports = function(sequelize, dataTypes) {
 
     let cols = {
         id: {
-            type: dataTypes.INTEGER,
+            type: dataTypes.STRING,
             primaryKey: true,
-            autoincrement: true,
-            allowNull: true,
+            allowNull: false,
         },
         name: {
             type: dataTypes.STRING,
@@ -23,15 +22,15 @@ module.exports = function(sequelize, dataTypes) {
         },
         conocimientosPrevios: {
             type: dataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         inversionesAnteriores: {
             type: dataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         miembroIEEE: {
             type: dataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         }
     };
 
