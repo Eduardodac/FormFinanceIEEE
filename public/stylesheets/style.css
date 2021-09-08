@@ -62,8 +62,7 @@ span {
 }
 
 .contact-form form button,
-.contact-form form input,
-.contact-form form textarea {
+.contact-form form input {
     width: 100%;
     padding: .7em;
     border: none;
@@ -90,7 +89,8 @@ span {
     *overflow: hidden;
 }
 
-.contact-form form button {
+.contact-form form button,
+button.block {
     background: #E34207;
     border: 0;
     text-transform: uppercase;

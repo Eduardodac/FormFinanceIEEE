@@ -3,7 +3,7 @@ const indexController = {
         res.render('index');
     },
     'user': (req, res, next) => {
-        res.send('reenvia el formulario');
+        res.render('agradecimiento');
     },
 }
 
