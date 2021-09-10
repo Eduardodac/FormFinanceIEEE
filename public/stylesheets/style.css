@@ -45,6 +45,9 @@ span {
     margin-left: 10px;
     margin-bottom: 10px;
 }
+h2.caja-error{
+    color: red;
+}
 
 /* span {
     color: #B70E21;

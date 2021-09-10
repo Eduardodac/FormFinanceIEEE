@@ -23,6 +23,9 @@
 
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
+                <% if (locals.errors) {%> 
+                    <h2 class="caja-error">¡Hay un error en los campos!</h3>
+                <% } %> 
                 <h3>Formulario de registro</h3>
                 <p>¡Bienvenido al registro para el taller sobre finanzas personales e inversiones!<br>
                     <br>Has dado un gran paso por haber llegado hasta aquí, ya que estadísticamente sólo uno de cada ochenta mexicanos conoce sobre estos temas.
