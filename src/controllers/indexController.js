@@ -44,7 +44,7 @@ const indexController = {
                         "Si has recibido este correo es porque te has registrado correctamente."+
                         "<br><br>"+
                         "En el siguiente enlace podrás unirte al grupo de WhatsApp, donde podrás enviar tus dudas, sugerencias o comentarios"+
-                        " a lo largo de este tiempo.No es obligatorio,"+
+                        " a lo largo de este tiempo. No es obligatorio,"+
                         " ya que todo el material que les compartamos en el grupo también te lo haremos llegar vía correo electrónico."+
                         "<br><br>"+
                         "<a href=https://chat.whatsapp.com/EZyKrneZQLBI2yJNQZBjxD>https://chat.whatsapp.com/EZyKrneZQLBI2yJNQZBjxD</a>"+
