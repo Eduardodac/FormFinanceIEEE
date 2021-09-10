@@ -38,7 +38,7 @@ const indexController = {
                       let info = transporter.sendMail({
                         from: "IEEE UPIITA <eduardo.dac@ieee.org>", // sender address
                         to: req.body.email, // list of receivers
-                        subject: "Taller de Finanzas personales e inversiones, ¿Oíste, viejo?", // Subject line
+                        subject: "Taller de Finanzas personales e inversiones. El futuro es hoy, ¿oíste, viejo?", // Subject line
                         text: "", // plain text body
                         html: "<p>¡Hola "+req.body.nombre+"!<br><br>"+
                         "Si has recibido este correo es porque te has registrado correctamente."+
