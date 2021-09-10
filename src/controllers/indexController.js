@@ -58,7 +58,7 @@ const indexController = {
                     
                       // Preview only available when sending through an Ethereal account
                       console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-                    res.render("agradecimiento")
+                    res.render("agradecimiento",{email:req.body.email})
                 })
                 .catch(err => {
                     res.send("error!: " + err)
