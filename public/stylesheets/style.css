@@ -102,6 +102,14 @@ h2.caja-error{
     *overflow: hidden;
 }
 
+div.content{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    text-align: center;
+    padding: 17px;
+    margin: auto;
+    border: solid 1px #fff;
+}
+
 .contact-form form button,
 button.block {
     background: #E34207;
