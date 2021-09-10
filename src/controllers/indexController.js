@@ -49,8 +49,10 @@ const indexController = {
                         "<br><br>"+
                         "<a href=https://chat.whatsapp.com/EZyKrneZQLBI2yJNQZBjxD>https://chat.whatsapp.com/EZyKrneZQLBI2yJNQZBjxD</a>"+
                         "<br><br>"+
-                        "Te recomendamos tomar el taller en una laptop o computadora de escritorio, para tener total libertad de consultar el material y las plantillas en tiempo real y con esto tener una mejor dinámica."
-                        +"</p>", // html body
+                        "Te recomendamos tomar el taller en una laptop o computadora de escritorio, para tener total libertad de consultar el material y las plantillas en tiempo real y con esto tener una mejor dinámica."+
+                        "<br><br>"+
+                        "Gracias por inscribirte. ¡Nos vemos pronto!"+
+                        "</p>", // html body
                       });
                     
                       console.log("Message sent: %s", info.messageId);
