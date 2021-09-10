@@ -1,23 +1,23 @@
 module.exports = {
     "development": {
-        "username": "b5ab60a5fa537a",
-        "password": "1bff9678",
-        "database": "heroku_2f5f6f10ca453d6",
-        "host": "us-cdbr-east-04.cleardb.com",
+        "username": "admin",
+        "password": "gif92E6zVScQ5XuZVDm9",
+        "database": "sys",
+        "host": "form-ieee.cihmpyihsbbq.us-east-2.rds.amazonaws.com",
         "dialect": "mysql"
     },
     "test": {
-        "username": "b5ab60a5fa537a",
-        "password": "1bff9678",
-        "database": "heroku_2f5f6f10ca453d6",
-        "host": "us-cdbr-east-04.cleardb.com",
+        "username": "admin",
+        "password": "gif92E6zVScQ5XuZVDm9",
+        "database": "sys",
+        "host": "form-ieee.cihmpyihsbbq.us-east-2.rds.amazonaws.com",
         "dialect": "mysql"
     },
     "production": {
-        "username": "b5ab60a5fa537a",
-        "password": "1bff9678",
-        "database": "heroku_2f5f6f10ca453d6",
-        "host": "us-cdbr-east-04.cleardb.com",
+        "username": "admin",
+        "password": "gif92E6zVScQ5XuZVDm9",
+        "database": "sys",
+        "host": "form-ieee.cihmpyihsbbq.us-east-2.rds.amazonaws.com",
         "dialect": "mysql"
     }
 }

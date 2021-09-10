@@ -35,6 +35,16 @@ span {
     color: #FA6D06;
 }
 
+.contact-form form .caja-error{
+    padding-bottom: 0px;
+}
+.contact-form form p.errorMessager{
+    color: #FA6D06;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
 /* span {
     color: #B70E21;
@@ -64,7 +74,7 @@ span {
 .contact-form form button,
 .contact-form form input {
     width: 100%;
-    padding: .7em;
+    padding: 0px;
     border: none;
     background: none;
     outline: 0;

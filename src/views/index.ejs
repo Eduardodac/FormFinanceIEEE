@@ -37,44 +37,66 @@
                     <br>Lo siguiente es que nos dejes algunos datos para continuar con todo el proceso.</p>
                 <span>*obligatorio</span>
                 <form action="/" method="post">
-                    <p>
+                    <p class=<%=(locals.errors && errors.nombre) ? "caja-error" : "" %>>
                         <label> <i class="fas fa-user"></i> Nombre (O como te gusta que se dirijan a ti)<span>*</span></label>
-                        <input type="text" name="nombre">
+                        <input
+                        type="text"
+                        name="nombre"
+                        value= "<%= locals.old && old.nombre ? old.nombre: ""; %>">
                     </p>
-                    <p>
-                        <label> <i class="fas fa-envelope"></i> Correo electrónico (Para mandarte spam sobre el taller)<span>*</span></label>
-                        <input type="email" name="email">
+                    <%if (locals.errors && errors.nombre) { %>
+                        <p class="errorMessager">
+                            *<%= errors.nombre.msg%>
+                        </p>
+                    <% } %>
+                    <p class=<%=(locals.errors && errors.email) ? "caja-error" : "" %>>
+                        <label> <i class="fas fa-envelope"></i> Correo electrónico (Para mandarte spam sobre el
+                            taller)<span>*</span></label>
+                        <input type="email" 
+                        name="email"
+                        value= "<%= locals.old && old.email ? old.email: ""; %>">
                     </p>
-                    <p>
+                    <%if (locals.errors && errors.email) { %>
+                        <p class="errorMessager">
+                            *<%= errors.email.msg%>
+                        </p>
+                    <% } %>
+                    <p class=<%=(locals.errors && errors.edad) ? "caja-error" : "" %>>
                         <label><i class="fas fa-hashtag"></i> Edad (Es para la estadística, no te preocupes)<span>*</span></label>
-                        <input type="text" name="edad">
+                        <input type="text" name="edad"
+                        value= "<%= locals.old && old.edad ? old.edad: ""; %>">
                     </p>
+                    <%if (locals.errors && errors.edad) { %>
+                        <p class="errorMessager">
+                            *<%= errors.edad.msg%>
+                        </p>
+                    <% } %>
                     <p>
                         ¿Tienes conocimientos previos sobre el tema? (No te preocupes, de cualquier forma empezaremos desde cero)
-                        <label class="know"> <input type="radio" name="conocimientosPrevios" value="ninguno">
-                                Ninguno, empezaré desde cero</label>
-                        <label class="know"> <input type="radio" name="conocimientosPrevios" value="basicas">
-                                Sé las cosas básicas</label>
-                        <label class="know"> <input type="radio" name="conocimientosPrevios" value="ordenadas">
-                                Tengo mis finanzas bien ordenadas</i></label>
-                        <label class="know"> <input type="radio" name="conocimientosPrevios" value="millonarios">
-                                Sé hacerte millonario con dos sencillas aplicaciones </label>
+                        <label class="know"> <input type="radio" name="conocimientosPrevios" value="Empezaré desde cero">
+                            Ninguno, empezaré desde cero</label>
+                        <label class="know"> <input type="radio" name="conocimientosPrevios" value="Sé las cosas básicas">
+                            Sé las cosas básicas</label>
+                        <label class="know"> <input type="radio" name="conocimientosPrevios" value="Tengo mis finanzas bien ordenadas">
+                            Tengo mis finanzas bien ordenadas</i></label>
+                        <label class="know"> <input type="radio" name="conocimientosPrevios" value="Sé hacerte millonario">
+                            Sé hacerte millonario con dos sencillas aplicaciones </label>
                     </p>
                     <p>
                         ¿Has invertido anteriormente?
                         <label class="know"> <input type="radio" name="inversionesAnteriores" value="si">
-                                Si</label>
+                            Si</label>
                         <label class="know"> <input type="radio" name="inversionesAnteriores" value="no">
-                                No</label>
+                            No</label>
                     </p>
                     <p>
                         ¿Eres miembro IEEE?
                         <label class="know"> <input type="radio" name="miembroIEEE" value="si">
-                                Si</label>
+                            Si</label>
                         <label class="know"> <input type="radio" name="miembroIEEE" value="no">
-                                No</label>
-                        <label class="know"> <input type="radio" name="miembroIEEE" value="noPero">
-                                No, pero me gustaría saber al respecto</label>
+                            No</label>
+                        <label class="know"> <input type="radio" name="miembroIEEE" value="No, pero me gustaría saber">
+                            No, pero me gustaría saber al respecto</label>
                     </p>
                     <p class="block">
                         <button>
