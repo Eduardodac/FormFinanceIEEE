@@ -51,7 +51,7 @@ const indexController = {
                         "<br><br>"+
                         "Te recomendamos tomar el taller en una laptop o computadora de escritorio, para tener total libertad de consultar el material y las plantillas en tiempo real y con esto tener una mejor dinámica."+
                         "<br><br>"+
-                        "Gracias por inscribirte. ¡Nos vemos pronto!"+
+                        "Gracias por registrarte. ¡Nos vemos pronto!"+
                         "</p>", // html body
                       });
                     
