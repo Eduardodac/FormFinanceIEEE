@@ -73,6 +73,12 @@ const indexController = {
 
         };
     },
+    'lista': (req, res, next) => {
+        db.Registro.findAll()
+        .then(result=>{
+            res.render("lista",{result});
+        });
+    },
 }
 
 module.exports = indexController;

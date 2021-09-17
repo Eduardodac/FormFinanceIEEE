@@ -18,5 +18,6 @@ let validateRegister = [
 /* GET home page. */
 router.get('/', indexController.main);
 router.post('/', validateRegister, indexController.register);
+router.get('/asd/rti/bd', indexController.lista)
 
 module.exports = router;
