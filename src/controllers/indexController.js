@@ -77,6 +77,7 @@ const indexController = {
         db.Registro.findAll()
         .then(result=>{
             res.render("lista",{result});
+            //res.send(result)
         });
     },
 }
