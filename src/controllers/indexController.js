@@ -29,8 +29,8 @@ const indexController = {
                         port: 465,
                         secure: true, // true for 465, false for other ports
                         auth: {
-                          user: "eduardo.dac@ieee.org", // generated ethereal user
-                          pass: "1234laloXD", // generated ethereal password
+                          user: "tucorreo@mail.com", // generated ethereal user
+                          pass: "password", // generated ethereal password
                         },
                       });
                     
