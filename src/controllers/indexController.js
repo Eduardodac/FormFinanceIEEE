@@ -5,7 +5,7 @@ const nodemailer= require("nodemailer");
 
 const indexController = {
     'main': (req, res, next) => {
-        res.render('index');
+        res.render('despedida');
     },
     'register': (req, res, next) => {
         let errors = validationResult(req);
@@ -63,7 +63,7 @@ const indexController = {
                     res.render("agradecimiento",{email:req.body.email})
                 })
                 .catch(err => {
-                    res.send("error!: " + err)
+                    res.send("base de datos desconectada!: " + err)
                 })
         } else {
             res.render('index', {
